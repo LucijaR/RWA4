@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+ 
+</head>
+
+<body>
+ <script type="text/javascript">
+ 
+var arr = ['Ovo', 'je', 'My', 'prvi', 'komad', 'OF', 'JAVASCRIPT', 'koda', 'Koji', 'je', 'proradio'];
+var brojac = 0;
+
+function velikaslova(x) 
+{ 
+brojac=0;
+  for (var i = 0; i < x.length; i++) 
+  {
+    if (x[i] === x[i].toUpperCase()) 
+	{
+      brojac++;
+    }
+  }
+  return brojac;
+}
+
+function filter(arr) 
+{
+  var novi = [];
+
+  for (var i = 0; i < arr.length; i++) 
+  {
+    if ((velikaslova(arr[i]) != 0) || (arr[i].length>=5))
+	{
+      novi.push(arr[i]);
+    }
+  }
+
+  console.log(novi);
+}
+
+filter(arr);
+
+ 
+ </script>
+ 
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+ 
+</head>
+
+<body>
+ <script type="text/javascript">
+ 
+ const osoba=[
+ {
+   firstName:"Marko",
+   lastName:"Maric", 
+   age:40, 
+   eyeColor:"black"
+ },
+ 
+ {
+   firstName:"Ivana",
+   lastName:"Ivic", 
+   age:13, 
+   eyeColor:"blue"
+ },
+ 
+ {
+   firstName:"Antonija",
+   lastName:"Antolic", 
+   age:80, 
+   eyeColor:"gray"
+ } ];
+ 
+ for( i=0; i< osoba.length; i++)
+ {
+    document.write("Osoba " + (i+1) + ":</br>" +
+                    "Ime: " + osoba[i].firstName + "</br>" +
+                    "Prezime: " + osoba[i].lastName + "</br>" +
+                    "Godine: " + osoba[i].age + "</br>" +
+                    "Boja očiju: " + osoba[i].eyeColor + "</br></br>"
+				   );
+ }
+ 
+ </script>
+ 
+</body>
+</html>

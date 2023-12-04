@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+ 
+</head>
+
+<body>
+ <script type="text/javascript">
+ 
+ zbroj=0;
+ 
+ function savrseni(x)
+ {
+   for(i=1;i<=x;i++)
+    {
+	   for(j=1;j<i;j++)
+	    {
+	      if(i % j == 0)
+	         zbroj=zbroj+j;
+	    } 
+  if(zbroj == i)
+    { 
+       document.write(i+'</br>');
+	}
+   zbroj=0;
+   }
+ }
+ 
+ savrseni(5510);
+ 
+ </script>
+ 
+</body>
+</html>
